@@ -60,7 +60,7 @@ public class FitnessCal {
 
 	@Test
 	public void fitnessCalculatorMale() {
-		driver.findElement(By.xpath("//button[@class='hamburger']")).click();
+		driver.findElement(By.xpath("//button[@class='hamburger tab-focus']")).click();
 		driver.findElement(By.xpath("//a[@href='/fitness/calculator']")).click();
 
 		// WebDriver wait
@@ -111,7 +111,7 @@ public class FitnessCal {
 	}
 	@Test
 	public void fitnessCalculatorFemale() {
-		driver.findElement(By.xpath("//button[@class='hamburger']")).click();
+		driver.findElement(By.xpath("//button[@class='hamburger tab-focus']")).click();
 		driver.findElement(By.xpath("//a[@href='/fitness/calculator']")).click();
 
 		// WebDriver wait

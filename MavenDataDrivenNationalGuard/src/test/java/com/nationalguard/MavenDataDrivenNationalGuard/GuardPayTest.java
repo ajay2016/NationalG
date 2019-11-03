@@ -61,7 +61,7 @@ public class GuardPayTest {
 	// Enlistment type : Enlisted
 	@Test
 	public void guardpayEnlisted() {
-		driver.findElement(By.xpath("//button[@class='hamburger']")).click();
+		driver.findElement(By.xpath("//button[@class='hamburger tab-focus']")).click();
 		driver.findElement(By.xpath("//a[@href='/pay/calculator']")).click();
 
 		// WebDriver wait
@@ -92,7 +92,7 @@ public class GuardPayTest {
 	// Enlistment type : Officer
 	@Test
 	public void guardpayOfficer() {
-		driver.findElement(By.xpath("//button[@class='hamburger']")).click();
+		driver.findElement(By.xpath("//button[@class='hamburger tab-focus']")).click();
 		driver.findElement(By.xpath("//a[@href='/pay/calculator']")).click();
 
 		// WebDriver wait

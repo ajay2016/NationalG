@@ -60,7 +60,7 @@ public class WeightCalculatorTest {
 
 	@Test
 	public void weightCalculatorMale() {
-		driver.findElement(By.xpath("//button[@class='hamburger']")).click();
+		driver.findElement(By.xpath("//button[@class='hamburger tab-focus']")).click();
 		driver.findElement(By.xpath("//a[@href='/weight/calculator']")).click();
 
 		// WebDriver wait
@@ -98,7 +98,7 @@ public class WeightCalculatorTest {
 	
 	@Test
 	public void weightCalculatorFemale() {
-		driver.findElement(By.xpath("//button[@class='hamburger']")).click();
+		driver.findElement(By.xpath("//button[@class='hamburger tab-focus']")).click();
 		driver.findElement(By.xpath("//a[@href='/weight/calculator']")).click();
 
 		// WebDriver wait

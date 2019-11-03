@@ -1,6 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [National Guard Suite]">
+  <test name="FiltnessCalculator(failed)">
+    <classes>
+      <class name="com.nationalguard.MavenDataDrivenNationalGuard.WeightCalculatorTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.nationalguard.MavenDataDrivenNationalGuard.WeightCalculatorTest -->
+      <class name="com.nationalguard.MavenDataDrivenNationalGuard.NationalGuardGetStarted">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.nationalguard.MavenDataDrivenNationalGuard.NationalGuardGetStarted -->
+      <class name="com.nationalguard.MavenDataDrivenNationalGuard.FitnessCal">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="fitnessCalculatorFemale"/>
+          <include name="setup"/>
+          <include name="fitnessCalculatorMale"/>
+        </methods>
+      </class> <!-- com.nationalguard.MavenDataDrivenNationalGuard.FitnessCal -->
+      <class name="com.nationalguard.MavenDataDrivenNationalGuard.GuardPayTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.nationalguard.MavenDataDrivenNationalGuard.GuardPayTest -->
+    </classes>
+  </test> <!-- FiltnessCalculator(failed) -->
+  <test name="GuardPay(failed)">
+    <classes>
+      <class name="com.nationalguard.MavenDataDrivenNationalGuard.WeightCalculatorTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.nationalguard.MavenDataDrivenNationalGuard.WeightCalculatorTest -->
+      <class name="com.nationalguard.MavenDataDrivenNationalGuard.NationalGuardGetStarted">
+        <methods>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.nationalguard.MavenDataDrivenNationalGuard.NationalGuardGetStarted -->
+      <class name="com.nationalguard.MavenDataDrivenNationalGuard.FitnessCal">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.nationalguard.MavenDataDrivenNationalGuard.FitnessCal -->
+      <class name="com.nationalguard.MavenDataDrivenNationalGuard.GuardPayTest">
+        <methods>
+          <include name="guardpayOfficer"/>
+          <include name="closeBrowser"/>
+          <include name="guardpayEnlisted"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.nationalguard.MavenDataDrivenNationalGuard.GuardPayTest -->
+    </classes>
+  </test> <!-- GuardPay(failed) -->
   <test name="WeightCalculator(failed)">
     <classes>
       <class name="com.nationalguard.MavenDataDrivenNationalGuard.WeightCalculatorTest">
@@ -8,6 +68,7 @@
           <include name="closeBrowser"/>
           <include name="weightCalculatorMale"/>
           <include name="setup"/>
+          <include name="weightCalculatorFemale"/>
         </methods>
       </class> <!-- com.nationalguard.MavenDataDrivenNationalGuard.WeightCalculatorTest -->
       <class name="com.nationalguard.MavenDataDrivenNationalGuard.NationalGuardGetStarted">
